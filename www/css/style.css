@@ -507,3 +507,9 @@ textarea.form-control {
 .logged-out {
     display: none;
 }
+
+#clock{
+    color: rgb(235, 29, 156);
+    font-size: 20px;
+    position:absolute; top:60px; left:70%; 
+}
