@@ -513,6 +513,7 @@ window.addEventListener('unload', function() {
         postsListener = null;
     }
 });
+
     </script>
 </head>
 <body>
@@ -521,6 +522,9 @@ window.addEventListener('unload', function() {
         
         <!-- メッセージ表示エリア -->
         <div id="messageArea"></div>
+
+        <!-- 時刻表示エリア -->
+        <div id="clock" style="font-size: 24px; font-weight: bold; margin-bottom: 20px;"></div>
 
         <!-- 認証フォーム（未ログイン時表示） -->
         <div class="auth-container logged-out">
