@@ -514,6 +514,18 @@ window.addEventListener('unload', function() {
     }
 });
 
+// 現在の時刻を表示する関数
+function updateClock() {
+        const date = new Date();
+        const hours = String(date.getHours()).padStart(2, '0');
+        const minutes = String(date.getMinutes()).padStart(2, '0');
+        const seconds = String(date.getSeconds()).padStart(2, '0');
+        const timeString = `${hours}:${minutes}:${seconds}`;
+        document.getElementById('clock').textContent = timeString;
+    }
+    setInterval(updateClock, 1000); 
+    updateClock(); 
+    </script>
     </script>
 </head>
 <body>
